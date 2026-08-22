@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starfighter-SGL-MK3 — Scramble! · AlexGames</title>
+<meta name="description" content="Starfighter SGL MK-3 is a horizontally-scrolling pixel shoot-'em-up in the Gradius tradition — fly hand-built stages, spend power cells on the weapons you want, and take a capital ship apart gun by gun. Free in your browser. No ads, no tracking. Made by AlexGames.">
+<meta name="theme-color" content="#0b0b1a">
+
+<!-- Social / Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Starfighter SGL MK-3 — Earn your arsenal!">
+<meta property="og:description" content="A horizontally-scrolling shooter in the Gradius tradition. Earn your arsenal, thread a neon city, take a capital ship apart gun by gun. Free in your browser.">
+<meta property="og:image" content="assets/starfighter/title-h.png">
+<meta property="og:url" content="https://alexgames.net/starfighter.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Icons -->
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- Arcade display face, used sparingly for headings -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<!-- ===================== Header ===================== -->
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-512.png" alt="">
+      <span>ALEX<b>GAMES</b></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">← All games</a>
+      <a href="#what">Game</a>
+      <a href="#features">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="#support">Support</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== Hero ===================== -->
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-art" src="assets/starfighter/title-v.png"
+         alt="Starfighter-SGL-MK3 — a pixel-art fighter craft streaking through enemy fire against a starfield.">
+    <p class="tagline">Earn your arsenal!</p>
+    <p class="lead">A horizontally-scrolling shooter in the Gradius tradition — pick a
+      hull, fly the length of a hand-built stage, and spend what you collect on the
+      weapons you want.</p>
+    <div class="badge-row">
+      <a class="sf-play" href="https://starfighter-sgl-mk3.alexgames.net"
+         aria-label="Play Starfighter SGL MK-3 in your browser">▶ PLAY NOW</a>
+      <span class="badge-note">Free in any browser · keyboard or touch · iPhone &amp; iPad to follow</span>
+    </div>
+  </section>
+
+<!-- ===================== What is it ===================== -->
+<section id="what">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The game</p>
+      <h2 class="section-title">What is <span class="star">Starfighter-SGL-MK3</span>?</h2>
+    </div>
+    <div class="about-copy" style="max-width:44rem;margin:0 auto;">
+      <p>Starfighter SGL MK-3 is a horizontally-scrolling shooter built the way the
+        arcade ones were: hand-authored stages rather than random waves, so every
+        enemy arrives somewhere for a reason and the stage is something you learn
+        rather than survive.</p>
+      <p>Power cells drop as you fight, and you decide what they buy — speed, missiles
+        that run along the ground to reach what a flat shot cannot, a laser that
+        becomes one unbroken lance across the screen, a shield across your nose, or up
+        to three satellites that mirror everything you fire. Fly a desert dawn, then a
+        neon sprawl of bridges and tower blocks you have to thread rather than dodge,
+        and take a capital ship apart gun by gun until its core is open.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Features ===================== -->
+<section id="features" class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What's inside</p>
+      <h2 class="section-title">Features</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="ico">🛠️</div>
+        <h3>Spend It Your Way</h3>
+        <p>A Gradius-style power bar: bank cells and choose speed, missiles, laser,
+          shield or satellites — and take a weapon twice to upgrade it.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🚀</div>
+        <h3>Three Hulls</h3>
+        <p>Heavy, all-rounder or light. Same arsenal on each; they differ in how they
+          fly and how hard every shot lands.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🏜️</div>
+        <h3>Stages You Can Crash Into</h3>
+        <p>The scenery is solid. Rock, bridges and tower blocks block your shots and
+          theirs, and the ground is a hazard in its own right.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🤖</div>
+        <h3>Bosses In Pieces</h3>
+        <p>Strip a capital ship gun by gun and each kill shows — sockets burn, and the
+          core only opens when the guns are gone.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🎈</div>
+        <h3>Easy Mode</h3>
+        <p>A gentler pace for younger pilots — the patterns keep their shape, they just
+          thin out and slow down.</p>
+      </div>
+      <div class="feature highlight">
+        <div class="ico">✨</div>
+        <h3>No Ads. No Tracking.</h3>
+        <p>No advertising, no analytics, no accounts. Just pure arcade joy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Screenshots ===================== -->
+<section id="screens">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Two stages built so far</p>
+      <h2 class="section-title">Screenshots</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="gallery">
+      <figure class="shot wide">
+        <img src="assets/starfighter/screens/01.png" loading="lazy"
+             alt="The player's ship and its three satellites firing four parallel laser lances across a desert canyon as drones explode.">
+        <figcaption class="cap">Stage 1 · First Light</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/starfighter/screens/02.png" loading="lazy"
+             alt="A four-legged walker machine crossing the desert floor below the player's ship, its roof turret tracking upward.">
+        <figcaption class="cap">The Crawler</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/starfighter/screens/03.png" loading="lazy"
+             alt="The Warblade in its robot form, unfolded from a warship, lunging with a glowing cyan sword.">
+        <figcaption class="cap">The Warblade</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/starfighter/screens/04.png" loading="lazy"
+             alt="The Leviathan capital ship filling the screen with every gun firing, the player's laser striking its hull.">
+        <figcaption class="cap">The Leviathan</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/starfighter/screens/05.png" loading="lazy"
+             alt="The Leviathan stripped of its guns, fires burning in the empty sockets, firing a wide beam from its prow.">
+        <figcaption class="cap">Core Exposed</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/starfighter/screens/06.png" loading="lazy"
+             alt="The ship skimming the tower blocks of a neon city of bridges and warehouses at dusk.">
+        <figcaption class="cap">Stage 2 · Neon Sprawl</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-hint">← scroll for more →</p>
+  </div>
+</section>
+
+<!-- ===================== Support + Privacy ===================== -->
+<section id="support">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Here to help</p>
+      <h2 class="section-title">Support &amp; Privacy</h2>
+    </div>
+    <div class="card-row">
+      <div class="info-card">
+        <h3>Support</h3>
+        <p>Questions, bugs, or a high score to brag about? We'd love to hear from you.</p>
+        <p class="mono">📧 <a href="mailto:groovyshrubbery@gmail.com">groovyshrubbery@gmail.com</a></p>
+        <a class="btn" href="mailto:groovyshrubbery@gmail.com?subject=Starfighter-SGL-MK3%20support">Email us</a>
+      </div>
+      <div class="info-card" id="privacy">
+        <h3>Privacy</h3>
+        <p>Starfighter-SGL-MK3 contains no ads and no tracking. The only thing it stores
+          is the high score and display name you choose for the leaderboard.</p>
+        <p>Read the full policy for the details.</p>
+        <a class="btn" href="privacy-policy.html">Privacy Policy →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Footer ===================== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-brand">★ STARFIGHTER-SGL-MK3 · ALEXGAMES</div>
+    <nav>
+      <a href="index.html">All games</a>
+      <a href="#what">Game</a>
+      <a href="#features">Features</a>
+      <a href="#screens">Screens</a>
+      <a href="#support">Support</a>
+      <a href="privacy-policy.html">Privacy</a>
+    </nav>
+    <small>© 2026 AlexGames · Made with love for the golden age of the arcade.</small>
+  </div>
+</footer>
+
+<script src="stars.js" defer></script>
+</body>
+</html>
