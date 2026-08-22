@@ -204,6 +204,19 @@ nav.site-nav a:hover{ color:var(--gold); text-decoration:none; }
 .googleplay .txt small{ display:block; font-size:.62rem; letter-spacing:.04em; color:#cfcfe6; }
 .appstore .txt b,
 .googleplay .txt b{ font-size:1.15rem; font-weight:600; }
+/* Not-yet-released store badge: looks like a badge, isn't a link. Better than
+   an <a href="#"> that scrolls to the top and reads as broken. */
+.googleplay.is-soon{
+  opacity:.45;
+  cursor:default;
+  border-style:dashed;
+}
+.googleplay.is-soon:hover{
+  transform:none;
+  border-color:#3a3a55;
+  box-shadow:none;
+}
+
 .badge-note{
   font-family:var(--mono);
   font-size:.78rem;

@@ -55,9 +55,10 @@ stay distinguishable at favicon size, where the letters stop being legible.
 4. Name the game in `privacy-policy.html` if it stores anything.
 
 ## Before you ship
-- **Store links:** `starbob.html` has placeholder `href="#"` on both the
-  `.appstore` and `.googleplay` badges (marked with `TODO` comments). Swap in the
-  real URLs once Starbob is live on each store.
+- **Google Play link:** `starbob.html`'s Play badge is a non-clickable
+  `.googleplay.is-soon` span, because `org.alexgames.starbob` is not published on
+  Play yet. Once it is, make it an `<a href>` — the URL is deterministic from the
+  package name: `https://play.google.com/store/apps/details?id=org.alexgames.starbob`
 - **Store badge artwork:** both badges are hand-drawn inline SVG matching the site
   style. Apple and Google both require their *official* badge artwork in shipped
   marketing — swap these for the official assets before any paid promotion.
@@ -69,7 +70,11 @@ stay distinguishable at favicon size, where the letters stop being legible.
   - Privacy Policy URL → `https://alexgames.net/privacy-policy.html`
 
 ## Platforms
-- **Starbob** — iOS (App Store) and Android (Google Play), both announced as coming soon.
+- **Starbob** — **out now on the App Store**, $0.99, Apple ID `6790853192`
+  (`https://apps.apple.com/app/id6790853192`, bundle `org.alexgames.starbob`,
+  released 2026-08-06). Android not published yet.
+  Tip: `curl -s "https://itunes.apple.com/lookup?bundleId=org.alexgames.starbob"`
+  confirms live status and the store URL without opening a browser.
 - **Starfighter SGL MK-3** — playable now in the browser at
   `https://starfighter-sgl-mk3.alexgames.net`; iOS and Android to follow.
 
