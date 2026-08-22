@@ -3,3 +3,10 @@
 
 # Editor / tooling
 .claude/
+
+# Working art generations. This repo publishes its root, so only the logo
+# source actually in use is versioned; rejected takes stay local.
+art-src/*
+!art-src/logo/
+art-src/logo/*
+!art-src/logo/alexgames-logo-v3-2.png

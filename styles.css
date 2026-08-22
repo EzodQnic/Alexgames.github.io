@@ -121,7 +121,6 @@ header.site .wrap{
 .brand img{
   width:32px; height:32px;
   border-radius:8px;
-  image-rendering:pixelated;
   box-shadow:var(--glow);
 }
 .brand b{ color:var(--gold); }
@@ -178,7 +177,8 @@ nav.site-nav a:hover{ color:var(--gold); text-decoration:none; }
   align-items:center;
   flex-wrap:wrap;
 }
-.appstore{
+.appstore,
+.googleplay{
   display:inline-flex;
   align-items:center;
   gap:.75rem;
@@ -189,16 +189,21 @@ nav.site-nav a:hover{ color:var(--gold); text-decoration:none; }
   padding:.6rem 1.15rem;
   transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
-.appstore:hover{
+.appstore:hover,
+.googleplay:hover{
   text-decoration:none;
   transform:translateY(-2px);
   border-color:var(--gold);
   box-shadow:0 8px 30px rgba(255,211,77,.25);
 }
-.appstore svg{ width:26px; height:26px; flex:none; }
-.appstore .txt{ text-align:left; line-height:1.1; }
-.appstore .txt small{ display:block; font-size:.62rem; letter-spacing:.04em; color:#cfcfe6; }
-.appstore .txt b{ font-size:1.15rem; font-weight:600; }
+.appstore svg,
+.googleplay svg{ width:26px; height:26px; flex:none; }
+.appstore .txt,
+.googleplay .txt{ text-align:left; line-height:1.1; }
+.appstore .txt small,
+.googleplay .txt small{ display:block; font-size:.62rem; letter-spacing:.04em; color:#cfcfe6; }
+.appstore .txt b,
+.googleplay .txt b{ font-size:1.15rem; font-weight:600; }
 .badge-note{
   font-family:var(--mono);
   font-size:.78rem;
@@ -315,7 +320,6 @@ h2.section-title .star{ color:var(--gold); text-shadow:var(--glow); }
   width:84px; height:84px;
   margin:0 auto 1.25rem;
   border-radius:18px;
-  image-rendering:pixelated;
   box-shadow:var(--glow);
 }
 
@@ -469,7 +473,6 @@ footer.site small{ font-size:.8rem; }
   width:112px; height:112px;
   margin:0 auto 1.5rem;
   border-radius:24px;
-  image-rendering:pixelated;
   box-shadow:var(--glow), 0 24px 60px rgba(0,0,0,.5);
 }
 .hub-title{
