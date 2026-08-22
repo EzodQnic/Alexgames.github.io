@@ -509,3 +509,6 @@ footer.site small{ font-size:.8rem; }
 /* LANDSCAPE plates. Starbob is a portrait phone game and .shot is sized for it;
    a 800x448 frame at 216px wide is a postage stamp. */
 .shot.wide img{ width:min(430px, 84vw); border-radius:14px; }
+
+/* A card whose art reads best from its top edge rather than its middle (see index.html). */
+.game-art img.art-top{ object-position:top; }

@@ -84,7 +84,11 @@
 
       <a class="game-card" href="starfighter.html">
         <div class="game-art">
-          <img src="assets/starfighter/title-v.png" alt="Starfighter-SGL-MK3 — a pixel-art fighter craft streaking through enemy fire." loading="lazy">
+          <!-- `art-top` because .game-art is a 16:10 cover box: a portrait poster
+               centre-crops to Kestrel's torso with her head cut off, and the landscape
+               plate loses the end of the title off the right edge. Anchored to the top,
+               the crop is the title block and her head, which is what a card wants. -->
+          <img class="art-top" src="assets/starfighter/title-v.png" alt="Starfighter SGL MK-3 key art: Kestrel, the pilot — short copper-red hair, a dark flight suit — standing arms folded beside blueprint schematics of her fighter, with the ship itself flying out of the drawings." loading="lazy">
         </div>
         <div class="game-body">
           <h3>Starfighter<br>SGL MK-3</h3>
