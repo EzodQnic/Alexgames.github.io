@@ -8,6 +8,7 @@ Doubles as the App Store **Support URL** and hosts the **Privacy Policy**.
 index.html            AlexGames hub — one card per game
 starbob.html          Starbob game page
 starfighter.html      Starfighter-SGL-MK3 game page
+auxano.html           The Auxano Project game page (in development; announced on the hub)
 privacy-policy.html   Privacy policy, covers all games (App Store requires a public URL)
 styles.css            Site styles (dark arcade theme), shared by every page
 stars.js              Twinkling starfield background (reduced-motion aware)
@@ -19,6 +20,7 @@ assets/               Label icons + game art
   title-v.png         Starbob hero art (portrait)
   title-h.jpg         Starbob landscape art (social/OG card)
   screens/            Starbob gameplay frames
+  auxano/             The Auxano Project: title-v.png (poster), title-h.png (banner / OG card), screens/01–06.png
   starfighter/        Starfighter-SGL-MK3 art
     title-v.png       Hero art (portrait) + hub card image
     title-h.png       Landscape art (social/OG card)

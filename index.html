@@ -59,6 +59,32 @@
   </div>
 </section>
 
+<!-- ===================== Announcement ===================== -->
+<section class="tight" aria-label="Announcement">
+  <div class="wrap">
+    <a class="ax-announce" href="auxano.html">
+      <img src="assets/auxano/title-h.png" alt="The Auxano Project key art: Lillie with a figure of light behind her, her friends and rivals around her, planets above London's riverside.">
+      <span class="ax-announce-body">
+        <span class="eyebrow">Announcing</span>
+        <span class="ax-announce-title">The Auxano Project</span>
+        <span class="ax-announce-text">Our first RPG. A physicist in London, a mind made of light,
+          and the one way humanity could outgrow a finite world. Every character talks back.</span>
+        <span class="game-cta">Meet the cast →</span>
+      </span>
+    </a>
+  </div>
+</section>
+<style>
+  .ax-announce{ display:grid; grid-template-columns:1.6fr 1fr; gap:0; text-decoration:none; color:inherit;
+                border:2px solid #58e1ff; border-radius:10px; overflow:hidden; background:rgba(88,225,255,.05); }
+  .ax-announce img{ width:100%; height:100%; object-fit:cover; display:block; image-rendering:pixelated; }
+  .ax-announce-body{ display:flex; flex-direction:column; justify-content:center; gap:.6rem; padding:1.5rem; }
+  .ax-announce-title{ font-family:'Press Start 2P',monospace; font-size:1.05rem; line-height:1.5; color:#f0b429; }
+  .ax-announce-text{ opacity:.9; }
+  .ax-announce:hover{ border-color:#f0b429; }
+  @media (max-width: 720px){ .ax-announce{ grid-template-columns:1fr; } }
+</style>
+
 <!-- ===================== Games ===================== -->
 <section id="games" class="tight">
   <div class="wrap">
@@ -97,6 +123,20 @@
             stages, spend what you collect on the weapons you want, and take a capital
             ship apart gun by gun.</p>
           <p class="game-meta">Playable now in your browser · iOS &amp; Android to follow</p>
+          <span class="game-cta">View game →</span>
+        </div>
+      </a>
+
+      <a class="game-card" href="auxano.html">
+        <div class="game-art">
+          <img class="art-top" src="assets/auxano/title-v.png" alt="The Auxano Project key art: Lillie in the centre with a figure made of light behind her." loading="lazy">
+        </div>
+        <div class="game-body">
+          <h3>The Auxano<br>Project</h3>
+          <p class="game-tag">Nothing reaches a new place until someone goes there first.</p>
+          <p>A narrative RPG in 90s isometric pixel art. Talk to anyone, earn their
+            trust, and build the one thing that could let humanity grow past a finite world.</p>
+          <p class="game-meta">In development</p>
           <span class="game-cta">View game →</span>
         </div>
       </a>
@@ -154,6 +194,7 @@
     <nav>
       <a href="#games">Games</a>
       <a href="starbob.html">Starbob</a>
+      <a href="auxano.html">The Auxano Project</a>
       <a href="#about">About</a>
       <a href="#support">Support</a>
       <a href="privacy-policy.html">Privacy</a>

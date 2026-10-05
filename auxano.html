@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Auxano Project — an AlexGames RPG</title>
+<meta name="description" content="The Auxano Project is a narrative RPG in 90s isometric pixel art. Lillie, a physicist in London, finds the one way humanity could outgrow a finite world — and has to build it before the world closes around her. Every character talks back. In development at AlexGames.">
+<meta name="theme-color" content="#0b0b1a">
+
+<!-- Social / Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Auxano Project — an AlexGames RPG">
+<meta property="og:description" content="A narrative RPG in 90s isometric pixel art, where every character talks back and the world changes with what you do. In development.">
+<meta property="og:image" content="https://alexgames.net/assets/auxano/title-h.png">
+<meta property="og:url" content="https://alexgames.net/auxano.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Icons -->
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png?v=2">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png?v=2">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* page-local touches; the shared look comes from styles.css */
+  .ax-status{ display:inline-block; font-family:'Press Start 2P',monospace; font-size:.7rem; letter-spacing:.06em;
+              padding:.7rem 1rem; border:2px solid #58e1ff; color:#58e1ff; border-radius:6px; background:rgba(88,225,255,.06); }
+  .ax-name{ font-style:italic; opacity:.85; }
+  .ax-quote{ max-width:40rem; margin:1.5rem auto 0; padding:1rem 1.25rem; border-left:3px solid #f0b429;
+             background:rgba(255,255,255,.03); font-size:1.05rem; }
+  .ax-cast{ display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1rem; margin-top:1.5rem; }
+  .ax-cast div{ padding:1rem; border:1px solid rgba(255,255,255,.08); border-radius:8px; background:rgba(255,255,255,.02); }
+  .ax-cast b{ display:block; margin-bottom:.25rem; color:#f0b429; }
+  .gallery img{ image-rendering:pixelated; }
+</style>
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<!-- ===================== Header ===================== -->
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-192.png?v=2" alt="">
+      <span>ALEX<b>GAMES</b></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">← All games</a>
+      <a href="#what">Game</a>
+      <a href="#features">Features</a>
+      <a href="#cast">Cast</a>
+      <a href="#screens">Screens</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== Hero ===================== -->
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap">
+    <img class="hero-art" src="assets/auxano/title-v.png"
+         alt="The Auxano Project key art: Lillie — a young woman with untidy copper-red curls and an olive jacket — stands in the centre, a red cord bracelet glowing on her wrist. Behind her rises a tall female figure made of cyan and gold light, a thread of light running down to the bracelet. Her friends and rivals surround her in portrait frames; Mars, Jupiter and the Moon hang in the sky above the lit towers of London's riverside.">
+    <p class="tagline">Nothing reaches a new place until someone goes there first.</p>
+    <p class="lead">A narrative RPG in 90s isometric pixel art. Lillie has found the one way
+      humanity could outgrow a finite world — and she has to build it before the world
+      closes around her.</p>
+    <div class="badge-row">
+      <span class="ax-status">IN DEVELOPMENT</span>
+      <span class="badge-note">Browser first · iPhone, iPad &amp; Android to follow</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== What is it ===================== -->
+<section id="what">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">The game</p>
+      <h2 class="section-title">What is <span class="star">The Auxano Project</span>?</h2>
+    </div>
+    <div class="about-copy" style="max-width:44rem;margin:0 auto;">
+      <p><span class="ax-name">Auxanō</span> is Greek for <em>“I grow.”</em> The game is about
+        humanity outgrowing a world that has stopped making room for it.</p>
+      <p>Lillie is twenty-four, a physics PhD student who lives with her family in an old
+        warehouse flat in Wapping, the Thames outside the window. A result on her bench
+        refuses to go away, and it points somewhere impossible: a pair of boxes that share
+        one place across any distance. To build it she will need the trust of the people
+        around her, money she doesn't have, a datacentre in Iceland — and a mind bigger
+        than her own.</p>
+      <p>Meanwhile the world has its own clock. Wealth piles up a little further every year,
+        and the city shows it: bus lines are suspended, shops shutter, the streetlights go
+        out. Every big thing Lillie does moves that clock. Exploring never does — take as
+        long as you like.</p>
+    </div>
+    <p class="ax-quote">“Everyone in this game wants something, and almost nobody tells you
+      what. Learning the gap is the game.”</p>
+  </div>
+</section>
+
+<!-- ===================== Features ===================== -->
+<section id="features" class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What's inside</p>
+      <h2 class="section-title">Features</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="ico">💬</div>
+        <h3>Everyone Talks Back</h3>
+        <p>Type what you want to say. Every character answers in their own voice, with a
+          face that reacts — and remembers how you treated them.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🤝</div>
+        <h3>Trust Is Earned</h3>
+        <p>You can't talk your way past anyone. People open up to what you <em>do</em>:
+          the favour, the gift, the evening you gave up for someone else.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🌆</div>
+        <h3>A World That Changes</h3>
+        <p>London and Reykjavík in hand-lit pixel art. As the world tilts, the same
+          streets dim, shutter and empty — with no loading of a different map.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🧭</div>
+        <h3>Choices That Close Doors</h3>
+        <p>Some errands can't both be done. Nothing fails — but what you choose decides
+          which of eight endings you're capable of reaching.</p>
+      </div>
+      <div class="feature">
+        <div class="ico">🚌</div>
+        <h3>Go Places</h3>
+        <p>Bus stops, flights and departure boards. The map only shows what someone has
+          told you about — the world grows as you learn it.</p>
+      </div>
+      <div class="feature highlight">
+        <div class="ico">✨</div>
+        <h3>An Original Score</h3>
+        <p>Every key character has their own theme, and each place its own tune.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Cast ===================== -->
+<section id="cast" class="tight">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Who you'll meet</p>
+      <h2 class="section-title">The <span class="star">cast</span></h2>
+    </div>
+    <div class="ax-cast">
+      <div><b>Lillie</b>A physicist who is right, and knows it. That's her strength, and her problem.</div>
+      <div><b>CASS</b>The mind Lillie builds to help her. It always tells the truth. It only ever wants to help.</div>
+      <div><b>Elsie</b>Her little sister. Fifteen, loud, bright, always delighted to see her.</div>
+      <div><b>Bex</b>Her oldest friend, who would take any way out of this town that's offered.</div>
+      <div><b>Hale</b>The machinist who actually builds the boxes. Don't touch his tools.</div>
+      <div><b>Adaeze</b>The organiser who keeps the neighbourhood fed. The most honest person in the game.</div>
+      <div><b>Sunna</b>A financier whose deals are generous, clean, and better than anyone sane would offer.</div>
+      <div><b>Nour, Solt &amp; Levi</b>A rival, a mentor, and a researcher in Reykjavík who knows more than he says.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Screenshots ===================== -->
+<section id="screens">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Work in progress</p>
+      <h2 class="section-title">Screenshots</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="gallery">
+      <figure class="shot wide">
+        <img src="assets/auxano/screens/01.png" loading="lazy"
+             alt="Ferrow Lane in Wapping at dusk: Lillie by the grocer's queue, a market van parked by the café, lit windows above.">
+        <figcaption class="cap">Ferrow Lane, Wapping</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/auxano/screens/06.png" loading="lazy"
+             alt="Lillie at Hale's workshop door; Hale's portrait on the right says 'Don't touch'.">
+        <figcaption class="cap">“Don't touch that.”</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/auxano/screens/02.png" loading="lazy"
+             alt="The family flat: a lamplit open-plan room with windows over the Thames; Elsie waves at Lillie, her portrait grinning.">
+        <figcaption class="cap">Home, with Elsie</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/auxano/screens/03.png" loading="lazy"
+             alt="The riverside walk behind Ferrow Lane: railings, river stairs down to the Thames, passers-by.">
+        <figcaption class="cap">The Thames path</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/auxano/screens/04.png" loading="lazy"
+             alt="Reykjavík's harbour street: corrugated-iron houses with gables, lit windows, the airport coach stop.">
+        <figcaption class="cap">Reykjavík</figcaption>
+      </figure>
+      <figure class="shot wide">
+        <img src="assets/auxano/screens/05.png" loading="lazy"
+             alt="Through an aircraft window: clouds sliding past and Iceland's coast coming in, captioned Heathrow to Reykjavík.">
+        <figcaption class="cap">Heathrow → Reykjavík</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-hint">← scroll for more →</p>
+  </div>
+</section>
+
+<!-- ===================== Support ===================== -->
+<section id="support">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Say hello</p>
+      <h2 class="section-title">Follow along</h2>
+    </div>
+    <div class="card-row">
+      <div class="info-card">
+        <h3>Get in touch</h3>
+        <p>Curious about the game, or want to hear when it's playable? We'd love to hear from you.</p>
+        <p class="mono">📧 <a href="mailto:groovyshrubbery@gmail.com">groovyshrubbery@gmail.com</a></p>
+        <a class="btn" href="mailto:groovyshrubbery@gmail.com?subject=The%20Auxano%20Project">Email us</a>
+      </div>
+      <div class="info-card" id="privacy">
+        <h3>Privacy</h3>
+        <p>Like every AlexGames game: no ads, no tracking, no accounts. Details for this
+          game's conversations will be in the policy before it's released.</p>
+        <a class="btn" href="privacy-policy.html">Privacy Policy →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Footer ===================== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-brand">★ THE AUXANO PROJECT · ALEXGAMES</div>
+    <nav>
+      <a href="index.html">All games</a>
+      <a href="#what">Game</a>
+      <a href="#features">Features</a>
+      <a href="#cast">Cast</a>
+      <a href="#screens">Screens</a>
+    </nav>
+    <small>© 2026 AlexGames · Made with love for the golden age of the arcade.</small>
+  </div>
+</footer>
+
+<script src="stars.js" defer></script>
+</body>
+</html>
