@@ -77,8 +77,9 @@ stay distinguishable at favicon size, where the letters stop being legible.
   released 2026-08-06). Android not published yet.
   Tip: `curl -s "https://itunes.apple.com/lookup?bundleId=org.alexgames.starbob"`
   confirms live status and the store URL without opening a browser.
-- **Starfighter SGL MK-3** — playable now in the browser at
-  `https://starfighter-sgl-mk3.alexgames.net`; iOS and Android to follow.
+- **Starfighter SGL MK-3** — being sold on the stores, so the site no longer links
+  the browser build. It still runs at `https://starfighter-sgl-mk3.alexgames.net` for
+  anyone with the direct link; don't re-add it to the pages.
 
 The one external dependency is the *Press Start 2P* webfont from Google Fonts (used
 sparingly for headings). It degrades gracefully to a monospace fallback if blocked.
